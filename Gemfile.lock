@@ -111,6 +111,9 @@ GEM
       ruby_parser (~> 3.5)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
+    importmap-rails (1.1.5)
+      actionpack (>= 6.0.0)
+      railties (>= 6.0.0)
     io-console (0.6.0)
     irb (1.6.4)
       reline (>= 0.3.0)
@@ -247,6 +250,7 @@ DEPENDENCIES
   debug
   haml-rails (~> 2.0)
   html2haml
+  importmap-rails (~> 1.1)
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
