@@ -53,6 +53,7 @@ gem "sassc-rails"
 
 gem "haml-rails", "~> 2.0"
 gem "awesome_print"
+gem 'bootstrap', '~> 5.1.3'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
