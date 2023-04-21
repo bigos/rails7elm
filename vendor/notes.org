@@ -24,3 +24,9 @@ $ ./bin/delayed_job start
 https://guides.rubyonrails.org/active_storage_overview.html
 
 https://guides.rubyonrails.org/active_storage_overview.html#attaching-files-to-records
+
+** Scaffold for Uploads
+#+begin_example
+rails generate scaffold Upload file:attachment
+rake db:migrate
+#+end_example
