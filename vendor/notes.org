@@ -1,0 +1,3 @@
+* Notes
+** Active Job
+https://guides.rubyonrails.org/active_job_basics.html
