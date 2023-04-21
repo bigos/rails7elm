@@ -55,6 +55,7 @@ gem "haml-rails", "~> 2.0"
 gem 'bootstrap', '~> 5.1.3'
 gem 'rack-cors'
 gem 'devise'
+gem 'delayed_job_active_record'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
