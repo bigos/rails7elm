@@ -1,2 +1,7 @@
 %h1 Home#page
 %p Find me in app/views/home/page.html.haml
+
+= javascript_include_tag 'custom-alert'
+%p
+  %button{type: 'button', onclick: 'customAlert()'}
+    Click here
