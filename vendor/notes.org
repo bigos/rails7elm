@@ -30,3 +30,14 @@ https://guides.rubyonrails.org/active_storage_overview.html#attaching-files-to-r
 rails generate scaffold Upload file:attachment
 rake db:migrate
 #+end_example
+
+*** trying to upload an image gives error and suggestion
+#+begin_quote
+To resolve this issue run: bin/rails active_storage:install
+#+end_quote
+
+the fix
+#+begin_example
+bin/rails active_storage:install
+rake db:migrate
+#+end_example

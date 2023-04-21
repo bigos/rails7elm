@@ -10,6 +10,10 @@
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
     = javascript_importmap_tags
   %body
+    = link_to 'Home', root_path
+    \|
+    = link_to 'Uploads', uploads_path
+    %hr
     %p.notice= notice
     %p.alert= alert
 
