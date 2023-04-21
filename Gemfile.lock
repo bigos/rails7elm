@@ -97,6 +97,7 @@ GEM
     crass (1.0.6)
     cssbundling-rails (1.1.2)
       railties (>= 6.0.0)
+    daemons (1.4.1)
     date (3.3.3)
     debug (1.7.2)
       irb (>= 1.5.0)
@@ -318,6 +319,7 @@ DEPENDENCIES
   bootstrap (~> 5.1.3)
   capybara
   cssbundling-rails
+  daemons
   debug
   delayed_job_active_record
   devise

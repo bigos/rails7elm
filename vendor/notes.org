@@ -1,5 +1,13 @@
 * Notes
+
 ** Active Job
 https://guides.rubyonrails.org/active_job_basics.html
 
 https://github.com/collectiveidea/delayed_job
+
+https://github.com/collectiveidea/delayed_job#running-jobs
+
+** Active Storage
+https://guides.rubyonrails.org/active_storage_overview.html
+
+https://guides.rubyonrails.org/active_storage_overview.html#attaching-files-to-records
