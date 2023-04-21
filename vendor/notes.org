@@ -5,6 +5,12 @@ https://guides.rubyonrails.org/active_job_basics.html
 
 https://github.com/collectiveidea/delayed_job
 
+run this after adding the gem
+#+begin_example
+rails generate delayed_job:active_record
+rake db:migrate
+#+end_example
+
 https://guides.rubyonrails.org/active_job_basics.html#creating-a-job
 
 https://github.com/collectiveidea/delayed_job#running-jobs
