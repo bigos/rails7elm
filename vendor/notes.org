@@ -5,7 +5,14 @@ https://guides.rubyonrails.org/active_job_basics.html
 
 https://github.com/collectiveidea/delayed_job
 
+https://guides.rubyonrails.org/active_job_basics.html#creating-a-job
+
 https://github.com/collectiveidea/delayed_job#running-jobs
+
+Running in development
+#+begin_example
+$ ./bin/delayed_job start
+#+end_example
 
 ** Active Storage
 https://guides.rubyonrails.org/active_storage_overview.html
