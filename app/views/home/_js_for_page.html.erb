@@ -1,0 +1,11 @@
+<%= javascript_include_tag 'collections' %>
+
+<script>
+ var node = document.getElementById("collections-widget");
+ if (node) {
+   var app = Elm.Collections.init({
+     node: node,
+     flags: <%= raw JSON.pretty_generate @elm_flags %>
+   });
+ }
+</script>
