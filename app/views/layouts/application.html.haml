@@ -14,8 +14,9 @@
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
     = javascript_importmap_tags
 
-    - turboval = content_for?(:body_turbo) ? yield(:body_turbo) : 'true'
+    - turboval = yield(:body_turbo) if content_for?(:body_turbo)
   %body{'data-turbo': turboval}
+    -# this is the best way to avoid troubles on pages leading to Elm widgets
     = link_to 'Home', root_path, 'data-turbo': 'false'
     \|
     = link_to 'Uploads', uploads_path
