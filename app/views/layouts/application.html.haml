@@ -1,7 +1,8 @@
 !!!
-%html
+%html{lang: 'en'}
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{name: 'viewport', content: 'with=device-width, initial-scale=1'}/
     %title
       - if content_for? :title
         = yield :title
@@ -15,13 +16,19 @@
     = javascript_importmap_tags
 
     - turboval = yield(:body_turbo) if content_for?(:body_turbo)
-  %body{'data-turbo': turboval}
+  %body{'data-turbo': turboval, class: 'container-lg'}
     -# this is the best way to avoid troubles on pages leading to Elm widgets
-    = link_to 'Home', root_path, 'data-turbo': 'false'
-    \|
-    = link_to 'Uploads', uploads_path
+    %nav.nav
+      = link_to 'Home', root_path, class: 'nav-link', 'data-turbo': 'false'
+      = link_to 'Uploads', uploads_path, class: 'nav-link'
     %hr
-    %p.notice= notice
-    %p.alert= alert
+    %div{class: 'container-sm'}
+      %p.notice= notice
+      %p.alert= alert
 
-    = yield
+    %div{class: 'container-fluid'}
+      = yield
+
+    %div.container-overflow{style: 'margin-top:1em'}
+      %footer.bg-dark.text-center.text-white
+        Rails7elm
