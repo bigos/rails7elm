@@ -3,15 +3,19 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title
-      - title = yield :title
-      = title.blank? ? 'Rails7elm' : title
+      - if content_for? :title
+        = yield :title
+      - else
+        Rails7elm
     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
     = javascript_importmap_tags
-  %body
+
+    - turboval = content_for?(:body_turbo) ? yield(:body_turbo) : 'true'
+  %body{'data-turbo': turboval}
     = link_to 'Home', root_path, 'data-turbo': 'false'
     \|
     = link_to 'Uploads', uploads_path
