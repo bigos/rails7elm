@@ -1,2 +1,10 @@
 * README
  This is an example of Rails 7 app with delayed_job and active storage.
+
+
+** project creation
+the project was created with:
+rails new rail7elm -d postgresql -c bootstrap -j importmap
+
+but different approach is recommended
+https://github.com/rails/rails/issues/48000
