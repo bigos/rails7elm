@@ -41,3 +41,17 @@ the fix
 bin/rails active_storage:install
 rake db:migrate
 #+end_example
+
+** Destroy surprise
+
+Some auto-generated code may have incorrect options.
+https://github.com/bigos/rails7elm
+
+This is correct example.
+
+#+begin_src ruby
+link_to "Destroy", article_path(@article), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  }
+#+end_src
