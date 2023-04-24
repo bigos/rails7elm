@@ -45,7 +45,8 @@ rake db:migrate
 ** Destroy surprise
 
 Some auto-generated code may have incorrect options.
-https://github.com/bigos/rails7elm
+
+https://guides.rubyonrails.org/getting_started.html#deleting-an-article
 
 This is correct example.
 
