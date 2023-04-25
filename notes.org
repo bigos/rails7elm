@@ -56,3 +56,6 @@ link_to "Destroy", article_path(@article), data: {
                     turbo_confirm: "Are you sure?"
                   }
 #+end_src
+
+And don't forget to investigate:
+javascript_include_tag "collections", data_turbo_track: 'true' 
